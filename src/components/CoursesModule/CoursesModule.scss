@@ -1,0 +1,180 @@
+.coursesModule {
+  padding: 80px 0 60px;
+  background: #fff;
+
+  .title {
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    font-size: 2rem;
+    margin: 0 0 40px;
+    color: #111;
+  }
+
+  .timelineWrap {
+    position: relative;
+    padding: 30px 0 20px;
+    min-height: 340px;
+  }
+
+  /* Yellow ribbon connector (behind nodes) */
+  .ribbon {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    height: 150px;
+    z-index: 0;
+  }
+
+  .ribbonStroke {
+    stroke: #f0dd6a;
+    stroke-width: 30;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08));
+  }
+
+  /* Node grid */
+  .nodes {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    align-items: center;
+  }
+
+  .node {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+  }
+
+  /* Circle */
+  .circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+    background: #f0dd6a;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+  }
+
+  .inner {
+    width: 76px;
+    height: 76px;
+    border-radius: 999px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .icon {
+    color: #444;
+    display: grid;
+    place-items: center;
+
+    svg {
+      font-size: 2.2rem;
+    }
+  }
+
+  /* Labels */
+  .label {
+    position: absolute;
+    width: 210px;
+    text-align: left;
+    color: #222;
+  }
+
+  .label.top {
+    top: 0;
+  }
+
+  .label.bottom {
+    bottom: 0;
+  }
+
+  .num {
+    font-weight: 900;
+    color: #e6c356;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .lblTitle {
+    font-weight: 800;
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .lblSub {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+
+  /* dotted vertical connector */
+  .dots {
+    display: block;
+    width: 4px;
+    height: 44px;
+    margin-top: 10px;
+    background-image: radial-gradient(#8a7a2c 2px, transparent 2px);
+    background-size: 6px 10px;
+    background-repeat: repeat-y;
+    opacity: 0.8;
+  }
+
+  /* Center dotted line properly to circle */
+  .node .label.top .dots {
+    margin-left: 92px;
+  }
+  .node .label.bottom .dots {
+    margin-left: 92px;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .nodes {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .ribbon {
+      display: none; // on small screens, hide ribbon (we can do mobile layout)
+    }
+    .node {
+      height: 240px;
+    }
+    .label {
+      width: 240px;
+    }
+    .node .label.top .dots,
+    .node .label.bottom .dots {
+      margin-left: 98px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .nodes {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .node {
+      height: auto;
+      padding: 18px 0;
+    }
+    .label {
+      position: static;
+      width: auto;
+      margin-bottom: 12px;
+    }
+    .dots {
+      display: none;
+    }
+  }
+}

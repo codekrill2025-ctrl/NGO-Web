@@ -1,0 +1,36 @@
+@use "../styles/variables" as *;
+
+.wrapper {
+  padding: $space-8 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: $space-8;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.supportBanner {
+  margin-top: $space-8;
+  background: $brand-green;
+  padding: $space-6;
+  border-radius: $radius;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.supportGrid {
+  margin-top: $space-6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $space-4;
+
+  @media (max-width: 1200px) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 600px) { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,46 @@
+.programmesSection {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.programmeItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.iconBox {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  svg {
+    font-size: 32px;
+  }
+}
+
+.programmeTitle {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  text-decoration: underline;
+}
+
+.programmeDesc {
+  font-size: 15px;
+  color: #444;
+  max-width: 420px;
+  line-height: 1.6;
+}

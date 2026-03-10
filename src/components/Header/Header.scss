@@ -1,0 +1,117 @@
+.header {
+  .toolbar {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logoWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 8px;
+
+    .logoMark {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #ffe600 0%, #fff59d 100%);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #2f2f2f;
+      border: 1px solid rgba(0,0,0,0.12);
+      user-select: none;
+    }
+
+    .logoText {
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1.05;
+
+      span {
+        display: block;
+        font-weight: 900;
+        font-size: 0.78rem;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .navBtn {
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: #2c2c2c;
+  
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .supportBtn {
+    border-radius: 12px;
+    padding: 10px 16px;
+    box-shadow: 0 6px 16px rgba(121, 185, 48, 0.25);
+  }
+
+  // Dropdown styles
+  .dropdownPaper {
+    margin-top: 10px;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12) !important;
+    overflow: hidden;
+  }
+
+  .dropdownList {
+    padding: 8px;
+    min-width: 260px;
+  }
+
+  .dropdownItem {
+    border-radius: 10px;
+    padding: 10px 12px;
+
+    &:hover {
+      background: rgba(121, 185, 48, 0.10);
+    }
+  }
+
+  .dropdownRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  // Responsive: collapse nav (simple approach)
+  @media (max-width: 900px) {
+    .nav {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .css-5c1adp-MuiContainer-root {
+        max-width: 1404px;
+    }
+}
+}
