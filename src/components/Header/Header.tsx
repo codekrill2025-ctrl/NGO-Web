@@ -122,6 +122,7 @@ export default function Header() {
             anchorEl={open.anchorEl}
             placement="bottom-start"
             disablePortal={false}
+            style={{ zIndex: 1001 }}
             modifiers={[
               { name: "offset", options: { offset: [0, 8] } },
               { name: "preventOverflow", options: { padding: 8 } },

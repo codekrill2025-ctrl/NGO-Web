@@ -1,0 +1,337 @@
+.contactPage {
+  background: #fff;
+}
+
+.breadcrumbBox {
+  background: #f1f1f1;
+  margin-top: 80px;
+  padding: 32px 34px;
+}
+
+.pageTitle {
+  font-size: 34px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 26px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+  font-weight: 800;
+
+  .green {
+    color: #7ec33a;
+  }
+}
+
+.contactTop {
+  padding: 80px 0;
+  display: flex;
+  gap: 32px;
+  
+  .contactLeft {
+    flex: 1;
+  }
+  
+  .contactRight {
+    flex: 1;
+  }
+}
+
+.sectionHeading {
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 22px;
+  color: #111;
+}
+
+.smallHeading {
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.normalText {
+  font-size: 15px;
+  color: #222;
+  line-height: 1.7;
+}
+
+.lightText,
+.partnerEmail {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.8;
+}
+
+.mt {
+  margin-top: 36px;
+}
+
+.mb {
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  label {
+    font-size: 14px;
+    color: #222;
+
+    span {
+      color: red;
+    }
+  }
+
+  .MuiOutlinedInput-root {
+    border-radius: 0;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+.formRow {
+  display: flex;
+  gap: 16px;
+}
+
+.formCol {
+  flex: 1;
+}
+
+.captchaBox {
+  width: 315px;
+  height: 74px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 14px;
+  margin-top: 8px;
+  background: #fafafa;
+
+  .checkBox {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #777;
+    display: inline-block;
+  }
+
+  .captchaText {
+    margin-left: auto;
+    color: #777;
+    font-size: 12px;
+  }
+}
+
+.submitBtn {
+  height: 42px;
+  background: #000 !important;
+  color: #fff !important;
+  border-radius: 2px !important;
+  font-weight: 900 !important;
+  margin-top: 4px !important;
+}
+
+.greySection {
+  background: #f4f4f4;
+  padding: 70px 0;
+}
+
+.accordionWrap {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.MuiAccordion-root {
+  box-shadow: none !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accTitle {
+  font-size: 17px;
+  font-weight: 900;
+  color: #111;
+}
+
+.accSubTitle {
+  font-size: 16px;
+  font-weight: 900;
+  color: #666;
+  margin-bottom: 28px;
+
+  &.other {
+    margin-top: 38px;
+  }
+}
+
+.partnerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.partnerCard {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.partnerTitle {
+  font-size: 15px;
+  font-weight: 900;
+  color: #666;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.partnerText {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.visitSection {
+  padding: 70px 0;
+}
+
+.visitTitle {
+  font-size: 22px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 26px;
+
+  &.regional {
+    margin-top: 42px;
+  }
+}
+
+.officeTabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+
+  button {
+    background: #f1f1f1;
+    color: #000;
+    font-weight: 900;
+    padding: 14px 22px;
+  }
+
+  .activeOffice {
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+}
+
+.officeBox {
+  border: 1px solid #ddd;
+  padding: 50px 20px 35px;
+}
+
+.infoCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.infoCard {
+  position: relative;
+  min-height: 210px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 70px 34px 30px;
+  text-align: center;
+  background: #fff;
+}
+
+.infoIcon {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58px;
+  height: 58px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: #7ec33a;
+
+  svg {
+    font-size: 28px;
+  }
+}
+
+.infoTitle {
+  font-size: 15px;
+  font-weight: 900;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.infoText {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #888;
+}
+
+.mapSection {
+  width: 100%;
+  height: 430px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .breadcrumbBox {
+    margin-top: 35px;
+  }
+
+  .contactTop {
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .captchaBox {
+    width: 100%;
+  }
+
+  .officeTabs {
+    flex-wrap: wrap;
+  }
+
+  .partnerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .formRow {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

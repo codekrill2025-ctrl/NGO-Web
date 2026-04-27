@@ -10,7 +10,7 @@ export const navItems: NavItem[] = [
     id: "about",
     label: "About Us",
     children: [
-      { label: "About Us", href: "#about" },
+      { label: "About Us", href: "/about" },
       { label: "People Behind Smile", href: "#people", rightArrow: true },
       { label: "Reach & Presence", href: "#reach" },
       { label: "Civic Driven Change", href: "#civic" },
@@ -83,11 +83,8 @@ export const navItems: NavItem[] = [
     id: "contact",
     label: "Contact Us",
     children:[
-      { label: "About Us", href: "#about" },
-      { label: "People Behind Smile", href: "#people", rightArrow: true },
-      { label: "Reach & Presence", href: "#reach" },
-      { label: "Civic Driven Change", href: "#civic" },
-      { label: "Smilestones", href: "#smilestones" },
-      { label: "Good Governance", href: "#governance" },
+      { label: "Get in Touch", href: "/contact" },
+      { label: "F&Q", href: "/f&Q" },
+     
     ],},
 ];
