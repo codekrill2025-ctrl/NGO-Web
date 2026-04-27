@@ -1,15 +1,15 @@
-.supportCause {
-    
-  padding: 100px 0;
-  background: #fff;
+.supportSection {
+  padding: 80px 0;
+  background: #ffffff;
 }
 
 .supportTitle {
   text-align: center;
-  font-size: 38px;
-  font-weight: 900;
-  margin-bottom: 70px;
-  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  color: #333333;
 }
 
 /* Card */
@@ -17,55 +17,76 @@
 .causeCard {
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 /* Image wrapper */
 
 .causeImage {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   img {
     width: 100%;
-    height: 340px;
+    height: 280px;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover img {
+    transform: scale(1.05);
   }
 }
 
 /* overlay title */
 
-.causeTitle {
+.imageTitle {
   position: absolute;
-  bottom: 20px;
-  left: 18px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1.1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
   text-transform: uppercase;
+  padding: 20px 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3), transparent);
+  margin: 0;
+  white-space: pre-line;
 }
 
 /* description */
 
 .causeDesc {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
 /* know more link */
 
 .causeLink {
-  font-size: 15px;
-  color: #7bb44d;
-  font-weight: 500;
+  font-size: 14px;
+  color: #4caf50;
+  font-weight: 600;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 
   &:hover {
+    color: #45a049;
     text-decoration: underline;
   }
 }
@@ -73,11 +94,40 @@
 /* Responsive */
 
 @media (max-width: 900px) {
+  .supportSection {
+    padding: 60px 0;
+  }
+  
+  .supportTitle {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  
   .causeImage img {
-    height: 260px;
+    height: 240px;
   }
 
-  .causeTitle {
-    font-size: 24px;
+  .imageTitle {
+    font-size: 18px;
+    padding: 15px 12px;
+  }
+  
+  .causeDesc {
+    font-size: 13px;
+  }
+  
+  .causeLink {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .causeImage img {
+    height: 200px;
+  }
+  
+  .imageTitle {
+    font-size: 16px;
+    padding: 12px 10px;
   }
 }

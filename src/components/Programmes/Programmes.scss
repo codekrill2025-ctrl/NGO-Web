@@ -1,46 +1,125 @@
 .programmesSection {
   padding: 80px 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 .sectionTitle {
   text-align: center;
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 2.2rem;
   letter-spacing: 1px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
+  color: #333333;
 }
 
 .programmeItem {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 25px;
+  padding: 20px 0;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateX(5px);
+  }
 }
 
 .iconBox {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   svg {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
 }
 
 .programmeTitle {
-  font-size: 22px;
-  font-weight: 800;
-  margin-bottom: 6px;
-  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
 }
 
 .programmeDesc {
   font-size: 15px;
-  color: #444;
-  max-width: 420px;
+  color: #666666;
+  max-width: 450px;
   line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .programmesSection {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  }
+  
+  .programmeItem {
+    gap: 20px;
+    padding: 15px 0;
+  }
+  
+  .iconBox {
+    width: 70px;
+    height: 70px;
+    
+    svg {
+      font-size: 32px;
+    }
+  }
+  
+  .programmeTitle {
+    font-size: 18px;
+  }
+  
+  .programmeDesc {
+    font-size: 14px;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .programmeItem {
+    gap: 15px;
+    padding: 12px 0;
+  }
+  
+  .iconBox {
+    width: 60px;
+    height: 60px;
+    
+    svg {
+      font-size: 28px;
+    }
+  }
+  
+  .programmeTitle {
+    font-size: 16px;
+  }
+  
+  .programmeDesc {
+    font-size: 13px;
+    max-width: 100%;
+  }
 }

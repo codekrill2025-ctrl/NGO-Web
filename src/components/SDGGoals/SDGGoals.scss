@@ -1,0 +1,119 @@
+.sdgSection {
+  padding: 90px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.sdgTopTitle {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sdgMainTitle {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.sdgGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* HEXAGON */
+
+.hexCard {
+  width: 170px;
+  height: 190px;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.hexCard:hover {
+  transform: translateY(-10px);
+}
+
+/* content */
+
+.hexContent {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+
+  svg {
+    font-size: 40px;
+  }
+}
+
+.goalTitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.goalNumber {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* COLORS */
+
+.purple {
+  background: linear-gradient(135deg, #b993d6, #8ca6db);
+}
+
+.pink {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+}
+
+.yellow {
+  background: linear-gradient(135deg, #fce38a, #f38181);
+}
+
+.green {
+  background: linear-gradient(135deg, #7ed56f, #28b485);
+}
+
+.blue {
+  background: linear-gradient(135deg, #5f9cff, #6a7fdb);
+}
+
+.lightgreen {
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .sdgGrid {
+    gap: 20px;
+  }
+
+  .hexCard {
+    width: 140px;
+    height: 160px;
+  }
+
+  .goalTitle {
+    font-size: 12px;
+  }
+}

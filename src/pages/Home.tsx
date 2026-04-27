@@ -3,11 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import CoursesModule from "../components/CoursesModule/CoursesModule";
+// import CoursesModule from "../components/CoursesModule/CoursesModule";
 import Programmes from "../components/Programmes/Programmes";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
 import Impact from "../components/Impact/Impact";
 import SupportCause from "../components/SupportCause/SupportCause";
+import SDGGoals from "../components/SDGGoals/SDGGoals";
+import StoriesMotion from "../components/StoriesMotion/StoriesMotion";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -75,6 +77,8 @@ export default function HomePage() {
 
      <Impact/>
       <Programmes />
+      <SDGGoals/>
+      <StoriesMotion/>
       <SupportCause/>
 
       {/* <CoursesModule /> */}

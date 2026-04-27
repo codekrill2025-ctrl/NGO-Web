@@ -107,7 +107,7 @@ export default function Header() {
               variant="contained"
               color="primary"
               className="supportBtn"
-              href="#support"
+              href="/donation"
             >
               Support a Cause
             </Button>
